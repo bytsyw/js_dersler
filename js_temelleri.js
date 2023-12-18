@@ -132,19 +132,38 @@
 
 //             İf-Else
 
-let username = "Beytullah";
+// let username = "Beytullah";
 
-let isLoggedin = username == "Beytullah";
-password = "1234";
+// let isLoggedin = username == "Beytullah";
+// password = "1234";
 
-if (isLoggedin) {
-  if (password == "1234") {
-    console.log(`Giriş başarılı ${username} Hoşgeldin`);
-  }
-  else{
-    console.log("Parola hatalı tekrar deneyiniz")
-  }
+// if (isLoggedin) {
+//   if (password == "1234") {
+//     console.log(`Giriş başarılı ${username} Hoşgeldin`);
+//   }
+//   else{
+//     console.log("Parola hatalı tekrar deneyiniz")
+//   }
+// } 
+// else {
+//   console.log("Hatalı giriş yaptınız");
+// }
+
+
+let mezuniyet = "üniversite"
+yas = 20;
+if(yas >= 18 && mezuniyet =="lise" || mezuniyet == "üniversite")
+{
+    console.log("Ehliyet alabilir")
 } 
-else {
-  console.log("Hatalı giriş yaptınız");
+else{
+    console.log("ehliyet alamaz")
 }
+
+// and
+// true , true = true
+// true , false = false
+
+// or
+// true , true = true
+// true , false = true
