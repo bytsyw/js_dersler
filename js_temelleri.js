@@ -76,6 +76,11 @@
 
 // 2. soru
 
+// let simdikiZaman = new Date().getFullYear(); // Bununla birlikte şimdiki zamanda içinde bulunduğumuz yılı alıyoruz
+
+// let yasbilgiBir = simdiZaman - dogumTarihi1;
+// let yasbilgiBir = simdiZaman - dogumTarihi2;
+
 // let BirinciYasbilgi = 2023 - Number(dogumTarihi1);
 // let ikinciYasbilgi = 2023 - Number(dogumTarihi2);
 
@@ -83,7 +88,7 @@
  // 3. soru 
 
 // let birinciOrt = (dersNot1 + dersNot2 + dersNot3)/3;
-// let ikinciOrt = (dersNot4 + dersNot5 + dersNot6)/3;
+// let ikinciOrt = (dersNot4 + dersNot5 + dersNot6)/3; // parseInt ile sayıyı ondalıklı kısmından kurtarıp direk tam sayı şeklinde yazabiliyoruz
 
 
 // 4. soru
