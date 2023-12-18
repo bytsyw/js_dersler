@@ -97,3 +97,52 @@
 // let gectiKaldiikinci = (ikinciOrt >50 ? "gecti": "kaldi"); 
 // console.log(gectiKaldibirinci)
 
+
+
+
+                            // Operatörler 
+
+let sonuc;
+
+let a = 10,
+b= 20
+c = 30;
+
+
+// 1. Aritmetik operatörler
+
+sonuc = a + b;
+sonuc = a - b;
+sonuc = a * b;
+sonuc = a / b;
+sonuc = a % b;
+
+sonuc = a++;
+sonuc = a--;
+sonuc = --a;
+
+
+
+// 2. Atama Operatörleri
+
+sonuc = a;
+
+sonuc += a;// sonuc = sonuc + a
+sonuc -= a;// sonuc = sonuc - a
+sonuc *= a;// sonuc = sonuc * a
+sonuc /= a;// sonuc = sonuc / a
+sonuc %= a;// sonuc = sonuc + a
+
+// 3. Karşılaştırma Operatörleri
+
+sonuc = (a == b) // Boolean değer döndürür 
+sonuc = (a != b) // Boolean değer döndürür 
+sonuc = (a === b) // bu üç eşittir hem tip hem de değer kontrollü yapar 
+sonuc = (a<b) //küçüklük kontrolü yappıyor
+sonuc = (a>b) // Büyüklük kontrolü yapıyor
+sonuc = (a<=b) // küçük eşit mi kontrolü yappıyor
+sonuc = (a>=b) // Büyük eşit mi kontrolü yapıyor
+
+
+
+console.log(sonuc)
