@@ -55,3 +55,40 @@
 
 
 
+                        // Uygulama ödevi
+
+// 1. soru
+
+// 1. Öğrenci 
+
+// let isim1 = "Ada Bilgi";
+// let dogumTarihi1 = "2012";
+// let dersNot1 = 70;
+// let dersNot2 = 70;
+// let dersNot3 = 80;
+
+// // 2. Öğrenci
+// let isim2 = "Yiğit Bilgi";
+// let dogumTarihi2 = "2010";
+// let dersNot4 = 40;
+// let dersNot5 = 40;
+// let dersNot6 = 50;
+
+// 2. soru
+
+// let BirinciYasbilgi = 2023 - Number(dogumTarihi1);
+// let ikinciYasbilgi = 2023 - Number(dogumTarihi2);
+
+
+ // 3. soru 
+
+// let birinciOrt = (dersNot1 + dersNot2 + dersNot3)/3;
+// let ikinciOrt = (dersNot4 + dersNot5 + dersNot6)/3;
+
+
+// 4. soru
+
+// let gectiKaldibirinci = (birinciOrt >50 ? "gecti": "kaldi"); 
+// let gectiKaldiikinci = (ikinciOrt >50 ? "gecti": "kaldi"); 
+// console.log(gectiKaldibirinci)
+
