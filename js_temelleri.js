@@ -167,3 +167,85 @@ else{
 // or
 // true , true = true
 // true , false = true
+
+
+//              İf else uygulama 
+
+// 1. soru 
+
+let sayi1 = 39;
+let x = 10
+y= 13
+z= 34;
+
+if(sayi1 >= 10 && sayi1 <= 50)
+{
+    console.log("sayı 10 ile 50 arasında")
+}
+else{
+    console.log("sayı 10 ile 50 arasında değil")
+}
+
+// 2. soru
+
+if(sayi1 %2 == 0){
+    console.log("sayı çifttir")
+}
+else{
+    console.log("sayı tektir")
+}
+
+//  3. Soru
+if( x> y && x>z){
+    console.log("x büyük")
+}
+else if(y> x && y>z){
+    console.log("y en büyük")
+}
+else if(z >y && z>x){
+    console.log("z büyük")
+}
+else{
+    console.log("hepsi eşit")
+}
+
+
+// 4. soru
+
+let vize1 = 40;
+let vize2 = 70;
+let final = 86;
+let vizeOrt = (vize1+vize2)*0.40;
+let finOrt = final*0.60;
+let ortalama = (finOrt+vizeOrt);
+// A şıkkı 
+
+if(ortalama < 50){
+    console.log(`ortalamanız 50 altı. Notunuz: ${ortalama} GEÇEMEDİNİZ`);
+}
+else{
+    console.log(`Sonucunuz ${ortalama} Geçtiniz`)
+}
+
+
+// B şıkkı 
+
+if((ortalama >= 50) && (final >= 50))
+{
+    console.log("Dersi başarıyla geçtiniz");
+}
+else if((ortalama >= 50) && (final < 50)){
+    console.log("Ortalamanız geçti ama final notunuz 50 den düşük KALDINIZ");
+}
+else{
+    console.log("Kaldınız");
+}
+
+// C şıkkı
+
+if(ortalama <=49 && final >=70){
+    console.log("Dersi başarılı ile geçtiniz");
+}
+else{
+    console.log("kaldınız");
+}
