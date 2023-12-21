@@ -249,3 +249,28 @@
 // else{
 //     console.log("kaldınız");
 // }
+
+
+
+//          String ifadeler
+
+// let ad = "Beytullah",
+// soyad = "Soy",
+// yas = 22,
+// sehir = "Samsun";
+
+
+// let mesaj = "Benim adım "+ ad + ' Soyadım ' + soyad + '.' + sehir + ' \'da Yaşıyorum.' + ' Emekliliğe ' + (65 - yas) + ' yıl Kaldı';
+
+//    Backtick ` ` Bu iki karekter arasına istediğimiz şeyleri + operatörü kullanmadan tanımlama yapabiliyoruz Mesela ' "benim adım " + ad' Yerine ' `Merhaba benim adım ${ad}`' şeklinde yazabiliyoruz 
+
+// mesaj = `Merhaba benim adım ${ad} Soyadım ${soyad}. ${sehir} 'da yaşıyorum Emekliliğime ${65 - yas} yıl kaldı.`;
+
+
+// ternary operatörü
+
+// let emeklilik = (65 - yas>0) ? "Emekliliğe "+ (65 - yas)+ " yıl kaldı" : "Zaten emekli oldunuz";
+
+//  let mesaj = `Merhaba benim adım ${ad} Soyadım ${soyad}. ${sehir} 'da yaşıyorum ${emeklilik}.`;
+
+// console.log(mesaj);
