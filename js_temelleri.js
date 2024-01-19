@@ -279,5 +279,24 @@
 
 
 
+let metin = "Sadık Turan İle Komple Uygulamalı Web Geliştirme";
 
+let sonuc;
+
+sonuc = metin.toLowerCase();
+sonuc = metin.length;
+sonuc = metin.slice(0,10);
+sonuc = metin.slice(-12,-10);
+sonuc = metin.substring(0,10);
+sonuc = metin.replace("Geliştirme", "gelişimi");
+sonuc = metin.trim();
+sonuc = metin.trimStart();
+sonuc = metin.trimEnd();
+sonuc = metin.indexOf("İle");
+sonuc = metin.split(" ");
+sonuc = metin.split(" ")[0];
+sonuc = metin.split(" ")[3];
+
+
+console.log(sonuc)
 
