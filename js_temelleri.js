@@ -279,35 +279,79 @@
 
 
 
-let metin = "Sadık Turan İle Komple Uygulamalı Web Geliştirme";
+// let metin = "Sadık Turan İle Komple Uygulamalı Web Geliştirme";
 
-let sonuc;
+// let sonuc;
 
-sonuc = metin.toLowerCase(); // Bu metot ile metin içindeki tüm karakterleri küçük harfe dönüştürüyoruz
+// sonuc = metin.toLowerCase(); // Bu metot ile metin içindeki tüm karakterleri küçük harfe dönüştürüyoruz
 
-sonuc = metin.length;  // Metin içindeki cümlenin uzunluğunu bu metot ile buluyoruz
+// sonuc = metin.length;  // Metin içindeki cümlenin uzunluğunu bu metot ile buluyoruz
 
-sonuc = metin.slice(0,10); // Başlangıç ve bitiş değeri vererek buradaki kelimeyi belirli bir alana göre alıyoruz
+// sonuc = metin.slice(0,10); // Başlangıç ve bitiş değeri vererek buradaki kelimeyi belirli bir alana göre alıyoruz
 
-sonuc = metin.slice(-12,-10); // Aynı şekilde tersen almak istersek - vermemiz yeterli
+// sonuc = metin.slice(-12,-10); // Aynı şekilde tersen almak istersek - vermemiz yeterli
 
-sonuc = metin.substring(0,10); // Tersten başlamak istersek Bu metotu kullanmamız yeterli
+// sonuc = metin.substring(0,10); // Tersten başlamak istersek Bu metotu kullanmamız yeterli
 
-sonuc = metin.replace("Geliştirme", "gelişimi"); // Bu metot metindeki cümlenin içindeki bir kelimeyi değiştirmemize yarıyor 
+// sonuc = metin.replace("Geliştirme", "gelişimi"); // Bu metot metindeki cümlenin içindeki bir kelimeyi değiştirmemize yarıyor 
 
-sonuc = metin.trim(); // Bu metot ile cümlenin başındaki ve sonundaki boşlukları siliyoruz bir kullanıcıdan veri alırken başında veya sonunda boşluk varsa onları alarak veritabanına kayıt edebiliriz
-sonuc = metin.trimStart();// Baştaki boşlukları alır
+// sonuc = metin.trim(); // Bu metot ile cümlenin başındaki ve sonundaki boşlukları siliyoruz bir kullanıcıdan veri alırken başında veya sonunda boşluk varsa onları alarak veritabanına kayıt edebiliriz
+// sonuc = metin.trimStart();// Baştaki boşlukları alır
 
-sonuc = metin.trimEnd(); // Sondaki boşlukları alır
+// sonuc = metin.trimEnd(); // Sondaki boşlukları alır
 
-sonuc = metin.indexOf("İle"); // Bu kelimenin hangi indexte olduğunu bulmamıza yarar aynı zamanda böyle bir kelime var mı diye de bakabilir
+// sonuc = metin.indexOf("İle"); // Bu kelimenin hangi indexte olduğunu bulmamıza yarar aynı zamanda böyle bir kelime var mı diye de bakabilir
 
-sonuc = metin.split(" "); // Bu metot Cümleyi boşluklara göre diziye dönüştürür ve her birini bir indexe atar
+// sonuc = metin.split(" "); // Bu metot Cümleyi boşluklara göre diziye dönüştürür ve her birini bir indexe atar
 
-sonuc = metin.split(" ")[0]; // Bu metot diziye dönüştürülen değerleri indexine göre ekrana getirir
+// sonuc = metin.split(" ")[0]; // Bu metot diziye dönüştürülen değerleri indexine göre ekrana getirir
 
-sonuc = metin.split(" ")[3]; // Aynı şekilde bu da indexteki elemanı ekrana getirir
+// sonuc = metin.split(" ")[3]; // Aynı şekilde bu da indexteki elemanı ekrana getirir
+
+// console.log(sonuc)
 
 
+
+                            // Stringlerle uygulamalar
+
+
+// 1. Soru: Url kaç karakterlidir
+// 2. Soru: KursAdi kaç kelimeden oluşmaktadır
+// 3. Soru: KursAdi içerisinde Eğitimi kelimesi var mı
+// 4. Soru: her iki değişkeni kullanarak link ve kelimeleri oluşturalım
+
+let url = "https://ww.bytsyw.com";
+let kursAdi = "Komple Uygulamalı Web Geliştirme Kursu";
+
+// 1. Cevap
+
+sonuc = url.length;
+
+
+console.log(`Bu url ${sonuc} karakterlidir`);
+
+// 2. Cevap
+
+sonuc = kursAdi.split(" ").length;
+
+console.log(`kurs adı ${sonuc} kelimeden oluşmaktadır`);
+
+
+// 3. Cevap
+
+sonuc = kursAdi.indexOf("Eğitimi") > -1 ? "var": "yok";
+
+console.log(`Bu kelime ${sonuc} `);
+
+
+// 4. Soru 
+
+
+kursAdi = kursAdi.replace("ş","s").replace("ı","i")
+boslukDonusturme = kursAdi.toLocaleLowerCase().replaceAll(" ","-");
+
+
+sonuc = `${url}/${boslukDonusturme}`;
 console.log(sonuc)
+
 
