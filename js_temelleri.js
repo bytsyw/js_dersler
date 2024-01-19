@@ -362,36 +362,74 @@
 
 
 
-let sonuc;
+// let sonuc;
 
-sonuc = 10; // Number veri türü döner 
-sonuc = "10"// String veri türü döner 
-sonuc = Number("10") // String veri türünü numbere çevirir
-sonuc = parseInt("10.12") // Aynı şekilde Number gibi string veri türünü numbere çevirir burada tek fark sadece tam sayı olarak döndürür
-sonuc = parseFloat("10.12") // Aynı şekilde Number gibi string veri türünü numbere çevirir burada tek fark sadece tam sayı olarak döndürmez ondalıklı kısmını da alır
-sonuc = parseInt ("10a") // baştan başlayarak sayıyı numbere çevirir string değeri almaz
-sonuc = parseInt("a10") // baştan başlayarak numbere dönüştürmeye çalışır ama NaN olarak döner çünkü veri string ifade ile
-sonuc = isNaN("10");
+// sonuc = 10; // Number veri türü döner 
+// sonuc = "10"// String veri türü döner 
+// sonuc = Number("10") // String veri türünü numbere çevirir
+// sonuc = parseInt("10.12") // Aynı şekilde Number gibi string veri türünü numbere çevirir burada tek fark sadece tam sayı olarak döndürür
+// sonuc = parseFloat("10.12") // Aynı şekilde Number gibi string veri türünü numbere çevirir burada tek fark sadece tam sayı olarak döndürmez ondalıklı kısmını da alır
+// sonuc = parseInt ("10a") // baştan başlayarak sayıyı numbere çevirir string değeri almaz
+// sonuc = parseInt("a10") // baştan başlayarak numbere dönüştürmeye çalışır ama NaN olarak döner çünkü veri string ifade ile
+// sonuc = isNaN("10");
 
-let sayi = 14.1235561312;
+// let sayi = 14.1235561312;
 
-sonuc = sayi.toPrecision(5); // soldan 5 sayıyı alır ve yazar eğer 6. sayı 5 veya büyükse 5. sayıyı bir arttırır değilse aynı kalır
-sonuc = sayi.toFixed(5); // burada ondalıklı sayıda 5 arar ve bulursa ekrana o sayıya kadarki kısmı verir
+// sonuc = sayi.toPrecision(5); // soldan 5 sayıyı alır ve yazar eğer 6. sayı 5 veya büyükse 5. sayıyı bir arttırır değilse aynı kalır
+// sonuc = sayi.toFixed(5); // burada ondalıklı sayıda 5 arar ve bulursa ekrana o sayıya kadarki kısmı verir
 
-sonuc = Math.round(2.4); // en yakın sayıya yuvarlar
-sonuc = Math.round(2.6);
-sonuc = Math.ceil(2.2);// her zaman üste yuvarlar 2.1 bile olsa 3 olur
-sonuc = Math.floor(2.2); // her zaman alta yuvarlar
+// sonuc = Math.round(2.4); // en yakın sayıya yuvarlar
+// sonuc = Math.round(2.6);
+// sonuc = Math.ceil(2.2);// her zaman üste yuvarlar 2.1 bile olsa 3 olur
+// sonuc = Math.floor(2.2); // her zaman alta yuvarlar
 
-sonuc = Math.sqrt(2,3); // karekökünü alır
+// sonuc = Math.sqrt(2,3); // karekökünü alır
 
-sonuc = Math.pow(2,4); // bir sayının karesini alır 2 üzeri 3 şeklinde olur  
-sonuc = Math.abs(-1); // Mutlak değer işlemleri için kullanılır
+// sonuc = Math.pow(2,4); // bir sayının karesini alır 2 üzeri 3 şeklinde olur  
+// sonuc = Math.abs(-1); // Mutlak değer işlemleri için kullanılır
 
-sonuc = Math.min(4,5,7,3,2) // buradaki sayının minimum değerini alır
+// sonuc = Math.min(4,5,7,3,2) // buradaki sayının minimum değerini alır
 
-sonuc = Math.max(12,2,4,5,657,2133); // buradaki sayıların en büyük değerini alır
+// sonuc = Math.max(12,2,4,5,657,2133); // buradaki sayıların en büyük değerini alır
 
-sonuc = Math.floor(Math.random()*110+50); // bize 0 ile 1 arasında bir sayı üretir biz bu sayı değerini arttırmak istiyorsak *10 veya 20 yapabiliriz
-console.log(typeof (sonuc))                                                    
-console.log(sonuc)                                                    
+// sonuc = Math.floor(Math.random()*110+50); // bize 0 ile 1 arasında bir sayı üretir biz bu sayı değerini arttırmak istiyorsak *10 veya 20 yapabiliriz
+// console.log(typeof (sonuc))                                                    
+// console.log(sonuc)                                                    
+
+
+// let simdi = new Date();
+
+// sonuc = simdi;
+
+// Get metotlarımız
+// sonuc = simdi.getDate(); //gün
+
+// sonuc = simdi.getDay(); // Günü index olarak verir
+
+// sonuc = simdi.getFullYear(); // Yıl 
+
+// sonuc = simdi.getHours(); // saat
+
+ // set metotları
+
+// simdi.setFullYear(2025); // şimdiki yılı değiştirmeye yarıyor
+// simdi.setMonth(7); // şimdiki ayı değiştirmeye yarıyor indexe göre ayrılıyor 
+// sonuc = simdi;
+
+
+// let dogumTarihi = new Date(1990,5,12);
+
+// sonuc = simdi.getFullYear()-dogumTarihi.getFullYear();
+
+
+// let milisec = simdi - dogumTarihi;
+
+// let saniye = milisec/1000;
+// let dakika = saniye/60;
+// let saat = dakika/60;
+// let day = saat/24;
+
+// sonuc = day
+
+// console.log(sonuc);
+// console.log(typeof sonuc);
