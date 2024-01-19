@@ -283,19 +283,30 @@ let metin = "Sadık Turan İle Komple Uygulamalı Web Geliştirme";
 
 let sonuc;
 
-sonuc = metin.toLowerCase();
-sonuc = metin.length;
-sonuc = metin.slice(0,10);
-sonuc = metin.slice(-12,-10);
-sonuc = metin.substring(0,10);
-sonuc = metin.replace("Geliştirme", "gelişimi");
-sonuc = metin.trim();
-sonuc = metin.trimStart();
-sonuc = metin.trimEnd();
-sonuc = metin.indexOf("İle");
-sonuc = metin.split(" ");
-sonuc = metin.split(" ")[0];
-sonuc = metin.split(" ")[3];
+sonuc = metin.toLowerCase(); // Bu metot ile metin içindeki tüm karakterleri küçük harfe dönüştürüyoruz
+
+sonuc = metin.length;  // Metin içindeki cümlenin uzunluğunu bu metot ile buluyoruz
+
+sonuc = metin.slice(0,10); // Başlangıç ve bitiş değeri vererek buradaki kelimeyi belirli bir alana göre alıyoruz
+
+sonuc = metin.slice(-12,-10); // Aynı şekilde tersen almak istersek - vermemiz yeterli
+
+sonuc = metin.substring(0,10); // Tersten başlamak istersek Bu metotu kullanmamız yeterli
+
+sonuc = metin.replace("Geliştirme", "gelişimi"); // Bu metot metindeki cümlenin içindeki bir kelimeyi değiştirmemize yarıyor 
+
+sonuc = metin.trim(); // Bu metot ile cümlenin başındaki ve sonundaki boşlukları siliyoruz bir kullanıcıdan veri alırken başında veya sonunda boşluk varsa onları alarak veritabanına kayıt edebiliriz
+sonuc = metin.trimStart();// Baştaki boşlukları alır
+
+sonuc = metin.trimEnd(); // Sondaki boşlukları alır
+
+sonuc = metin.indexOf("İle"); // Bu kelimenin hangi indexte olduğunu bulmamıza yarar aynı zamanda böyle bir kelime var mı diye de bakabilir
+
+sonuc = metin.split(" "); // Bu metot Cümleyi boşluklara göre diziye dönüştürür ve her birini bir indexe atar
+
+sonuc = metin.split(" ")[0]; // Bu metot diziye dönüştürülen değerleri indexine göre ekrana getirir
+
+sonuc = metin.split(" ")[3]; // Aynı şekilde bu da indexteki elemanı ekrana getirir
 
 
 console.log(sonuc)
