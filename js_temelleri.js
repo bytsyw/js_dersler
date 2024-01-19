@@ -274,3 +274,10 @@
 //  let mesaj = `Merhaba benim adım ${ad} Soyadım ${soyad}. ${sehir} 'da yaşıyorum ${emeklilik}.`;
 
 // console.log(mesaj);
+
+                                            // String Metotları
+
+
+
+
+
