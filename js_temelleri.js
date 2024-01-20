@@ -523,3 +523,79 @@
 
 
 // console.log(sonuc)
+
+
+
+// 1- "Elma, Armut, Muz, Çilek" elemanlarınıa sahip bir dizi oluşturunuz
+
+// let meyveler =["Elma","Armut","Muz","Çilek"];
+
+// 2- Dizi kaç elemanlıdır
+// let sonuc;
+// sonuc = meyveler.length;
+
+// console.log(sonuc)
+
+// 3- Dizinin ilk ve son elemanı nedir
+
+// console.log(meyveler[0]);
+// console.log(meyveler[meyveler.length-1]);
+
+// 4- Elma dizinin bir elemanı mıdır
+
+// sonuc = meyveler.includes("Elma")
+// console.log(sonuc)
+
+// 5- Kiraz meyvesini dizinin sonuna ekleyiniz
+
+// meyveler[meyveler.length] = "kiraz"; //Burada dizinin sırasını alıyoruz ve sona bir tane eleman ekliyoruz
+// meyveler.push("Kiraz")// Burada ise metot kullanarak diziye bir eleman ekliyoruz
+
+// 6- Dizinin son iki elemanını siliniz
+
+// meyveler.pop()
+// meyveler.pop()
+// sonuc = meyveler.splice(meyveler.length -2)
+// console.log(sonuc)
+
+
+// 7- Aşşağıdaki bilgileri dizi içerisinda saklayıınız ve her öğrencinin yaşını ve not ortalamasını hesaplayınız
+
+/*
+Öğrenci 1: Yiğit Bilgi 2010 (12,23,34)
+Öğrenci 2: ada Bilgi 2012 (90,93,100)
+Öğrenci 3: ada Bilgi 2015 (90,43,100)
+*/
+
+
+// ogr1 = [
+//     "yigit",
+//     "Bilgi",
+//     2010,
+//     [12,23,34]
+// ]
+// ogr2 = [
+//     "Ada",
+//     "Bilgi",
+//     2012,
+//     [90,93,100]
+// ]
+// ogr3 = [
+//     "Ada",
+//     "Turan",
+//     2015,
+//     [90,43,100]
+// ]
+// ogrenciler = [ogr1,ogr2,ogr3]
+
+// sonuc = ogrenciler[0][2]
+
+// let yigitYas = new Date().getFullYear() - ogrenciler[0][2]
+// let adaBYas = new Date().getFullYear() - ogrenciler[1][2]
+// let adaTYas = new Date().getFullYear() - ogrenciler[2][2]
+
+// let yigitNotOrt = (ogrenciler[0][3][0] + ogrenciler[0][3][1] + ogrenciler[0][3][2]) /3;
+// let adaBNotOrt = (ogrenciler[1][3][0] + ogrenciler[1][3][1] + ogrenciler[1][3][2])/3;
+// let adaTNotOrt = (ogrenciler[2][3][0] + ogrenciler[2][3][1] + ogrenciler[2][3][2])/3;
+// console.log(yigitYas, adaBYas,adaTYas);
+// console.log(yigitNotOrt.toFixed(3), adaBNotOrt.toFixed(3), adaTNotOrt.toFixed(3))
