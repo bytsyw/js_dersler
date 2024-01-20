@@ -599,3 +599,54 @@
 // let adaTNotOrt = (ogrenciler[2][3][0] + ogrenciler[2][3][1] + ogrenciler[2][3][2])/3;
 // console.log(yigitYas, adaBYas,adaTYas);
 // console.log(yigitNotOrt.toFixed(3), adaBNotOrt.toFixed(3), adaTNotOrt.toFixed(3))
+
+// let kullaniciA = {
+//     "ad": "Sahhak",
+//     "soyad":"ahhak",
+//     "yas":22,
+//     "adres":{
+//         "sehir":"Samsun",
+//         "ilce":"Çarşamba"
+//     },
+//     "hobiler": ["sinema","spor"]
+// }
+// let kullaniciB = {
+//     "ad": "kahre",
+//     "soyad":"ahhak",
+//     "yas":23,
+//     "adres":{
+//         "sehir":"Samsun",
+//         "ilce":"Çarşamba"
+//     },
+//     "hobiler": ["sinema","spor"]
+// }
+// let sonuc;
+
+
+// sonuc = kullaniciA.ad;
+// sonuc = kullaniciA.soyad;
+// sonuc = kullaniciA["yas"];
+// sonuc = kullaniciA.adres.sehir;
+// sonuc = kullaniciA.hobiler[0];
+// sonuc = kullaniciA.hobiler[1];
+
+// let kullanicilar = [
+//     kullaniciA,
+//     kullaniciB
+    
+// ]
+// sonuc = kullanicilar[1].ad
+
+
+// let urunler = [
+//     {
+//         "urun_adi":"Samsung s22",
+//         "urun_fiyati":19999
+//     },
+//     {
+//         "urun_adi":"Samsungs23",
+//         "urun_fiyati": 23900
+//     }
+// ]
+
+// console.log(sonuc)
