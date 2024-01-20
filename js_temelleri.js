@@ -489,3 +489,37 @@
 // console.log(kursAdi.split(" ")[2]);// geçen derste öğrendiğimiz bu metot ile boşlukları referans alıp bir diziye dönüştürebiliyoruz
 
 
+                // Dizi metotları 
+
+// let ogrenciler = ["Çınar","yiğit", "ada"];
+
+// sonuc = ogrenciler.length;
+
+// array to string bir diziyi stringe çevirebiliriz
+
+// sonuc = ogrenciler.toString();
+
+// sonuc = ogrenciler.join(" "); // Bu metot diziyi boşluklarla ayırıyor
+// sonuc = ogrenciler.pop(); // Son eleman silinir ve silinen eleman geri döndürülür ve silinen eleman ana diziden de silinir
+
+// sonuc = ogrenciler.shift(); // ilk eleman silinir
+
+
+// eleman eklemek için 
+
+// sonuc = ogrenciler.push("Sena"); // sona ekler
+// sonuc = ogrenciler.unshift("sena"); // ilk diziye ekler
+
+
+// let marka1 =["mazda", "toyota"];
+// let marka2 =["opel", "renault"];
+// let marka3 =["koessing"]
+ 
+// sonuc = marka1.concat(marka2,marka3); // Bu metot ayrı ayrı yazılan dizileri birleştirir. Birleştirildikten sonra diziler değişmiyor dizileri teker teker çağırsak bile elemanlarını getirir 
+
+// sonuc = marka1.splice(0,0,marka2);// Burada eklenen elemanlar 0. indexten eklemeye başlayarak elemanları ekler ilk girilen 0 nereden başlayacağını 2. 0 ise kaç tane eleman silineceğini belirtir illa bir eleman ekleme zorunluluğumuz yok
+// console.log(marka1)
+
+
+
+// console.log(sonuc)
