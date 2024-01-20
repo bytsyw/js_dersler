@@ -433,3 +433,59 @@
 
 // console.log(sonuc);
 // console.log(typeof sonuc);
+
+
+
+
+                          //Diziler
+
+
+// let urun1 = "Iphone 12",
+// urun2 = "Iphone 13",
+// urun3 = "Iphone 14";
+
+// let urunler = ["Iphone 12", "Iphone 13", "Ihone 14"]
+
+// let fiyat = [9000,12000,20000];
+
+// let renkler = ["gold", "siyah", "Beyaz"];
+
+// let urun1 = ["Iphone 12",9000,"Gold"]; //Burada bir ürünü böyle bir dizi içinde tutarak tüm bilgilerine erişebiliyoruz
+// let urun2 = ["Iphone 14",12000,"Beyaz"];
+// let urun3 = ["Iphone 13",20000,"Siyah"];
+
+
+// let urun4 = []
+//     urun4[0]="Iphone 12",
+//     urun4[1]=9000,
+//     urun4[2]="Gold"; // Aynı şekilde genel bir tanım yapıp bu tanımları tek tek indislere atayanbiliyoruz
+// let urun5 = []
+//     urun5[0]="Iphone 14",
+//     urun5[1]=12000,
+//     urun5[2]="Beyaz";
+// let urun6 = []
+//     urun6[0]="Iphone 13",
+//     urun6[0]=20000,
+//     urun6[0]="Siyah";
+//     let urun7 = [
+//         "Iphone 13",
+//         20000,
+//         ["Siyah","Beyaz","Kırmızı"]];
+    
+// urun6[2]="Mavi"; // Bu şekilde de ürünü dışarıdan da indexine erişebilir ve değiştirebiliriz
+// console.log(urun7[2][2]);
+// console.log(urunler[0]);
+// console.log(urunler[1]);
+// console.log(urunler[2]);
+
+// console.log(`${urunler[0]}-${fiyat[0]}-${renkler[0]}`)
+// console.log(`${urunler[1]}-${fiyat[1]}-${renkler[1]}`)
+// console.log(`${urunler[2]}-${fiyat[2]}-${renkler[2]}`)
+
+
+// let kursAdi = "Komple web geliştirme";
+
+// console.log(kursAdi[5]);
+// console.log(kursAdi.split(" ")[2]);// geçen derste öğrendiğimiz bu metot ile boşlukları referans alıp bir diziye dönüştürebiliyoruz
+
+
