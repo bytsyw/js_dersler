@@ -717,3 +717,45 @@
 
 
 
+                    //Döngülere giriş 
+
+
+
+
+// Birden çok veriyi tek tek yazmaktansa for ile bir döngü kurarak daha hızlı bir şekilde yapabiliriz 
+// let toplam =0;
+
+
+// for(let i =1;i<=10;i++){
+//     toplam +=i
+// }
+// console.log(toplam)    Burada For ile 1 den başlayıp 10 a kadar olan sayıları toplayıp toplam değişkenine atıyoruz ve ekrana yazdırıyoruz.
+
+// Mesela sayilar adında bir dizimiz var diyelim 
+
+// let sayilar = [1,4,2,3,5,6,3,2,6,8,23];
+
+// let toplam =0;
+
+// for(let i = 0;i<sayilar.length;i++){
+//     toplam+=sayilar[i];
+// }
+// console.log(toplam)
+
+
+// Buradaki tüm sayıları tek tek toplamak için console.log(sayilar[0]+sayilar[1]+sayilar[2]+sayilar[3]+) Şeklinde yapmamız gerekirdi. Çoklu veri olunca bu pek mümkün olmuyor malesef o yüzden bu şekilde for kullanarak veya forEach, while, do while kullanarak bu işi daha kısa kod yapısı ile yapabiliyoruz.
+
+
+// for un bazı kullanımları var içeride in of gibi bazı terimler kullanarak farklı işlevlerle de yapabiliyoruz
+
+// for(let sayi in sayilar){
+//     toplam+= sayi; // Burada in ilw sayiler dizisindeki sayıların index numaralarını alıyoruz
+// }
+// şeklinde yazabiliyoruz
+
+
+// for(let sayi of sayilar){
+//     toplam += sayi // of ile de indexleri yerine direk sayılara erişiyoruz ve böylelikle indexleri kullanmamıza gerek kalmıyor
+// }
+
+// console.log(toplam)
