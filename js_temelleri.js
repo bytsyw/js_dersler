@@ -650,3 +650,70 @@
 // ]
 
 // console.log(sonuc)
+
+                        //Objeler ile Örnek alıştırmalar yapıldı
+
+// let siparis = {
+//     "siparisId": 100,
+//     "siparisTarihi": "20.10.2024",
+//     "odemeSekli": "Kredi Kartı",
+//     "kargoAdresi":{
+//         "mahalle":" Küçükkolpuınar",
+//         "ilce":"Atakum",
+//         "il":"Samsun"
+//     },
+
+//     "urunler":
+//     [
+//          {
+//           "urunId": 1,
+//           "urunAd": "Iphone 15 Pro Max",
+//           "urunUrl": "hhtp://beytullahsoy.com",
+//           "urunFiyat": 110000
+//          }, 
+//          {
+//             "urunId": 2,
+//             "urunAd": "Iphone 14 Pro Max",
+//             "urunUrl": "hhtp://beytullahsoy.com",
+//             "urunFiyat": 80000
+//            },  
+//     ],
+// }
+
+// let siparis1 = {
+//     "siparisId": 101,
+//     "siparisTarihi": "20.10.2024",
+//     "odemeSekli": "Kredi Kartı",
+//     "kargoAdresi":{
+//         "mahalle":" Küçükkolpuınar",
+//         "ilce":"Atakum",
+//         "il":"Samsun"
+//     },
+
+//     "urunler":
+//     [ 
+//          {
+//             "urunId": 2,
+//             "urunAd": "Iphone 14 Pro ",
+//             "urunUrl": "hhtp://beytullahsoy.com",
+//             "urunFiyat": 79000
+//            },  
+//     ],
+// }
+
+
+// let siparisToplam = (siparis.urunler[0].urunFiyat + siparis.urunler[1].urunFiyat)*1.18;
+// let siparis1Toplam = (siparis.urunler[0].urunFiyat + siparis.urunler[1].urunFiyat)*1.18; 
+
+// let toplamSiparis = siparis1Toplam + siparisToplam;
+
+
+
+// console.log("sipariş 1:" + siparisToplam)
+// console.log("sipariş 2:" + siparis1Toplam)
+// console.log("Toplam ödenecek miktar: " , toplamSiparis)
+
+// let siparisler = [siparis,siparis1];
+
+
+
