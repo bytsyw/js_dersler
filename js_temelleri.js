@@ -771,3 +771,92 @@
 //     console.log(key)
 //     console.log(user[key])
 // }
+
+
+                        // Döngüler alıştırma soruları
+
+
+
+
+
+
+// let toplam = 1;
+// let sayilar = [1,5,7,15,3,25];
+
+// 1- Sayilar listesindeki her bir elemanın karesini yazdırma
+
+
+// for(let sayi of sayilar){
+//     toplam *=sayi
+// }
+// console.log(toplam)
+
+
+//2- sayilar listesindeki hangi sayılar 5 in katıdır?
+
+// for(let sayi in sayilar){
+//     if(sayilar[sayi]%5 ==0){
+//         console.log("beşin katı olan sayılar: " + sayilar[sayi])
+//     }
+// }
+
+// 3- sayılar listesindeki çift sayiların toplamı kaçtır?
+
+
+// for(let sayi of sayilar){
+//     if(sayi%2 == 0){
+//         toplam += sayi
+//     }
+// }
+// console.log(toplam)
+
+
+//  let urunler = ["iphone 12","samsung s22","iphone 13","samsung s23"];
+
+//4- urunler listesindeki tüm ürünelri büyük harf ile yazdırınız
+
+
+// for(let i =0; i<urunler.length;i++){
+//     console.log(urunler[i].toUpperCase());
+// }
+
+//5- urunler listesinde içinde samsung geçen kaç adet ürün vardır
+
+
+// let adet = 0;
+
+// for(let urun of urunler){
+//     if(urun.includes("samsung")){
+//         adet++;
+//     }
+// }
+// console.log(adet)
+
+// let ogrenciler = [
+//     {"ad":"yiğit", "soyad": "Bİlgi", "notlar":[60,70,100]},
+//     {"ad":"ada", "soyad": "Bİlgi", "notlar":[60,70,10]},
+//     {"ad":"çınar", "soyad": "Bİlgi", "notlar":[5,5,66]}
+// ];
+
+//6- ogrenciler listesindeki her öğrencinin not ortalamasını ve başarı durumlarını yazdırma
+
+
+// for(let ogrenci in ogrenciler){
+//     let notOrt=   ((ogrenciler[ogrenci].notlar[0]+ogrenciler[ogrenci].notlar[1]+ogrenciler[ogrenci].notlar[2])/3).toFixed(2);
+//     let bilgi = ogrenciler[ogrenci].ad +" "+ ogrenciler[ogrenci].soyad
+// if(notOrt >80){
+//     console.log(`AA ${bilgi} ${notOrt}`)
+// }
+// else if(notOrt>70){
+//     console.log(`BB ${bilgi} ${notOrt}`);
+// }
+// else if(notOrt > 50){
+//     console.log(`BC ${bilgi} ${notOrt}`)
+// }
+// else if(notOrt > 40){
+//     console.log(`CC ${bilgi} ${notOrt}`)
+// }
+// else if(notOrt<40){
+//     console.log(`FF ${bilgi} ${notOrt}`)
+// }
+// }
