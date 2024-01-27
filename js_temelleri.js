@@ -860,3 +860,42 @@
 //     console.log(`FF ${bilgi} ${notOrt}`)
 // }
 // }
+
+
+
+
+function selamlama(msg){
+    console.log(msg)
+}
+
+
+selamlama("selam")
+selamlama("merhaba")
+selamlama("iyi günler")
+
+
+function yasHesapla(dogumYili){
+    return new Date().getFullYear() - dogumYili;
+}
+
+let yasAhmet = yasHesapla(1970)
+let yasAyse = yasHesapla(1975)
+
+
+console.log(yasAhmet, yasAyse);
+
+function emekliligeKacYilKaldi(dogumYili , isim){
+    let yas = yasHesapla(dogumYili)
+    let kalanSene = 65-yas;
+
+    if(kalanSene > 0){
+        console.log(`${isim}, Emekli olmanıza ${kalanSene} kaldı`)
+    }
+    else{
+        console.log(`${isim}, emekli oldunuz`);
+    }
+}
+
+
+emekliligeKacYilKaldi(1959, "Ali");
+emekliligeKacYilKaldi(1999, "Ayse");
