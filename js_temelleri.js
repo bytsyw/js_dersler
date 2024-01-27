@@ -864,38 +864,107 @@
 
 
 
-function selamlama(msg){
-    console.log(msg)
-}
+// function selamlama(msg){
+//     console.log(msg)
+// }
 
 
-selamlama("selam")
-selamlama("merhaba")
-selamlama("iyi günler")
+// selamlama("selam")
+// selamlama("merhaba")
+// selamlama("iyi günler")
 
 
-function yasHesapla(dogumYili){
-    return new Date().getFullYear() - dogumYili;
-}
+// function yasHesapla(dogumYili){
+//     return new Date().getFullYear() - dogumYili;
+// }
 
-let yasAhmet = yasHesapla(1970)
-let yasAyse = yasHesapla(1975)
-
-
-console.log(yasAhmet, yasAyse);
-
-function emekliligeKacYilKaldi(dogumYili , isim){
-    let yas = yasHesapla(dogumYili)
-    let kalanSene = 65-yas;
-
-    if(kalanSene > 0){
-        console.log(`${isim}, Emekli olmanıza ${kalanSene} kaldı`)
-    }
-    else{
-        console.log(`${isim}, emekli oldunuz`);
-    }
-}
+// let yasAhmet = yasHesapla(1970)
+// let yasAyse = yasHesapla(1975)
 
 
-emekliligeKacYilKaldi(1959, "Ali");
-emekliligeKacYilKaldi(1999, "Ayse");
+// console.log(yasAhmet, yasAyse);
+
+// function emekliligeKacYilKaldi(dogumYili , isim){
+//     let yas = yasHesapla(dogumYili)
+//     let kalanSene = 65-yas;
+
+//     if(kalanSene > 0){
+//         console.log(`${isim}, Emekli olmanıza ${kalanSene} kaldı`)
+//     }
+//     else{
+//         console.log(`${isim}, emekli oldunuz`);
+//     }
+// }
+
+
+// emekliligeKacYilKaldi(1959, "Ali");
+// emekliligeKacYilKaldi(1999, "Ayse");
+
+
+
+
+//1- kendisine gönderilen kelimeyi belirtilen kez ekrana yazan fonksiyon
+
+// function parametre(sayi,kelime){
+//     for(let i =0; i<sayi; i++){
+//         console.log(kelime)
+//     }
+// }
+// parametre(5,"Merhaba")
+
+//2- Dikdörtgenin alanını ve çevresini hesaplayan fonksiyonu yazınız
+
+// function dikdörtgen(uzunKenar, kisaKenar){
+//     let alan = (uzunKenar*kisaKenar)
+//     console.log(alan)
+
+//     let cevre = (uzunKenar+kisaKenar)*2
+//     console.log(cevre)
+// }
+// dikdörtgen(15,10)
+
+
+//3- Yazı tura uygulamasını fonksiyon kullanarak yapınız
+
+// function paraAt(){
+//     let random = Math.random();
+
+//     if ( random >0.5){
+//         return "Yazı"
+//     }
+//     else{
+//         return "tura"
+//     }
+// }
+
+// console.log(paraAt())
+
+
+//4- kendisine gönderilen bir sayının tam bölenlerini dizi şeklinde döndüren fonksiyonu yazınız
+
+// function tamBolen(sayi){
+//     let sayilar = [];
+
+//     for(let i =2; i<sayi; i++){
+//         if(sayi%i==0){
+//             sayilar.push(i);
+//         }
+//     }
+//     return sayilar;
+// }
+// console.log(tamBolen(10))
+// console.log(tamBolen(15))
+
+
+//5- Değişken sayıda parametre alan toplam isminde bir fonksiyon tanımlayınız
+
+// function toplam(){
+//     let sonuc=0;
+//     for(let i =0;i<arguments.length;i++){ // Burada arguments ile gelen verileri key value şeklinde alıyoruz ve burada for kullanarak her birini tek tek gezip sonuc değişkeninde topluyoruz
+//         sonuc +=arguments[i];
+//     }
+//     return sonuc;
+// }
+
+// console.log(toplam(5,6))
+// console.log(toplam(5,6,2,5,7))
