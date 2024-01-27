@@ -968,3 +968,28 @@
 
 // console.log(toplam(5,6))
 // console.log(toplam(5,6,2,5,7))
+
+
+
+//              Scope nedir 
+
+// var isim = "ahmet"; // global scope
+
+// function yazdir(){
+//     var isim = "Ayşe";
+//     var yas = 20
+//     console.log("function scope: ",isim, yas)
+// }
+
+// if (true){
+//     var isim="zeynep";
+//     console.log(isim)
+// }
+// console.log(isim);
+// yazdir();
+
+// fonksiyonlar kendi scope alanlarını oluştururlar 
+
+// blok içerisinde yeni bir sxope oluşmaz. (let const)
+
+
