@@ -759,3 +759,15 @@
 // }
 
 // console.log(toplam)
+
+
+let user = {
+    "name":"Beytullah Soy",
+    "userName": "bytsy",
+    "password":"12345",
+    "email":"beyt649@gmail.com"
+};
+for(let key in user){
+    console.log(key)
+    console.log(user[key])
+}
