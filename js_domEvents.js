@@ -25,7 +25,7 @@
 
 
 
-
+                        // Multiple Elements
 
 // let sonuc;
 
@@ -49,3 +49,7 @@
 // }
 
 // console.log(sonuc);
+
+
+
+
