@@ -39,17 +39,30 @@
 // taskList = document.querySelectorAll("#task-list li"); // Burada bu etiket ile yukarıda iki işlem yapmak yerine tek satırda css kullanır gibi yazarak kapsayıcı yapabiliyoruz
 
 // for(let i = 0;i<taskList.length;i++){
-//     console.log(taskList)
+//     console.log(taskList[i])
 // }
 
 // for(let task of taskList){
 //     task.style.color="red"
 //     task.style.fontSize="20px"
-//     console.log(taskList)
+//     console.log(task)
 // }
 
-// console.log(sonuc);
+// console.log(sonuc); 
+
+                        //travercing elements
+
+// ul = document.getElementById("task-list");
 
 
+// sonuc = ul.children;
+// sonuc = ul.children[0].children[0].children[0].checked=true; // Burada elementlerin çocukları arasında gezinip bilgi alabiliyoruz veya bilgi atayabiliyoruz
 
+// sonuc = ul.firstElementChild; //ul deki task-list elemanlarından ilk elemente erişim sağlayabiliyoruz last ile de son elemente erişim sağlıyoruz
+// sonuc = ul.lastElementChild;
 
+// sonuc = document.getElementById("title").parentElement; // ana elemente erişim sağlıyoruz
+// sonuc = document.querySelector(".task").nextElementSibling;   // Sonraki elementlere geçiş yapabiliyoruz böylelikle diğer elementler üzerinde de kontrolümüz var oluyor
+
+// console.log(sonuc)
+ 
