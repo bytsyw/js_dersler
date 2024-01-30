@@ -90,7 +90,33 @@
 // }
 
 
- 
+                            //create ile obje üzerinde kullanım
+
+// let gorevListesi = [
+//     {"id":1,"gorevAdi":"Görev 1"},
+//     {"id":2,"gorevAdi":"Görev 2"},
+//     {"id":3,"gorevAdi":"Görev 3"},
+//     {"id":4,"gorevAdi":"Görev 4"}
+
+// ];
+
+// ul = document.getElementById("task-list");
+
+// for(let gorev of gorevListesi){
+//     let li = `<li class="task list-group-item">
+//                     <div class="form-check">
+//                         <input type="checkbox" name="" id="${gorev.id}" class="form-check-input">
+//                         <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
+//                     </div>
+//                 </li>`;
+//     ul.insertAdjacentHTML("beforeend",li);
+// }
+
+
+
+
+
+                            //Update kullanımı
 
 let gorevListesi = [
     {"id":1,"gorevAdi":"Görev 1"},
@@ -111,3 +137,18 @@ for(let gorev of gorevListesi){
                 </li>`;
     ul.insertAdjacentHTML("beforeend",li);
 }
+
+
+
+let sonuc;
+// document.querySelector("#task-list").parentElement.remove();
+//  document.querySelector("#task-list").children[0].remove();
+//  document.querySelector("#task-list").children[1].remove();
+
+
+
+
+// console.log(sonuc)
+
+
+
