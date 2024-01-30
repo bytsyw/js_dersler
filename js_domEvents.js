@@ -160,27 +160,38 @@
 
 
 
-let gorevListesi = [
-    {"id":1,"gorevAdi":"Görev 1"},
-    {"id":2,"gorevAdi":"Görev 2"},
-    {"id":3,"gorevAdi":"Görev 3"},
-    {"id":4,"gorevAdi":"Görev 4"}
+// let gorevListesi = [
+//     {"id":1,"gorevAdi":"Görev 1"},
+//     {"id":2,"gorevAdi":"Görev 2"},
+//     {"id":3,"gorevAdi":"Görev 3"},
+//     {"id":4,"gorevAdi":"Görev 4"}
 
-];
+// ];
 
-ul = document.getElementById("task-list");
+// ul = document.getElementById("task-list");
 
-for(let gorev of gorevListesi){
-    let li = `<li class="task list-group-item">
-                    <div class="form-check">
-                        <input type="checkbox" name="" id="${gorev.id}" class="form-check-input">
-                        <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
-                    </div>
-                </li>`;
-    ul.insertAdjacentHTML("beforeend",li);
-}
+// for(let gorev of gorevListesi){
+//     let li = `<li class="task list-group-item">
+//                     <div class="form-check">
+//                         <input type="checkbox" name="" id="${gorev.id}" class="form-check-input">
+//                         <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
+//                     </div>
+//                 </li>`;
+//     ul.insertAdjacentHTML("beforeend",li);
+// }
 
-document.querySelector("#btnAddNewTask").addEventListener("click",function(Event){
-    console.log("click Event")
-    event.preventDefault();
-    }); // Burada queryselector ile ilgili id nin butonuna gidip tıklandığında şu fonksiyonu çalıştırıp bize konsola click event yazdırdık. Butonumuzun type si button olunca sayfa yenilenmez ancak submit olunca her tıkladığımızda buton bir veri gönderiyormuş gibi her seferinde sayfa yenilenir bunu engellemek için fonksiyona bir even gönderiyoruz ve bu eventin metodundan davranışını zorunlu durduruyoruz.
+// document.querySelector("#btnAddNewTask").addEventListener("click",newTask); // Burada queryselector ile ilgili id nin butonuna gidip tıklandığında şu fonksiyonu çalıştırıp bize konsola click event yazdırdık. Butonumuzun type si button olunca sayfa yenilenmez ancak submit olunca her tıkladığımızda buton bir veri gönderiyormuş gibi her seferinde sayfa yenilenir bunu engellemek için fonksiyona bir even gönderiyoruz ve bu eventin metodundan davranışını zorunlu durduruyoruz.
+
+
+// document.querySelector("#btnClear").addEventListener("click",function(event){
+//         console.log("Event Clear")
+//         event.preventDefault();
+//         });
+
+
+// function newTask(event){
+            // console.log("click Event: Add")
+            // console.log(event.target)
+            // event.target.classList.add("btn-lg")
+            // event.preventDefault();
+            // } // Burada eventin özelliklerine erişim sağladığımızda ne oluyor onu öğrendik burada fonksiyonu çağırdığımız yerdeki class a btn-lg veya herhangi bir class özelliği verirsek o ekleniyor
