@@ -65,4 +65,49 @@
 // sonuc = document.querySelector(".task").nextElementSibling;   // Sonraki elementlere geçiş yapabiliyoruz böylelikle diğer elementler üzerinde de kontrolümüz var oluyor
 
 // console.log(sonuc)
+
+
+
+                            //Diziler kullanarak buradaki listeyi dizide kaç adet eleman var ise ona göre arttırıyoruz.
+
+// let sonuc;
+
+// let gorevListesi = ["Görev 1","Görev 2", "Görev 3","Görev 4"]
+// ul = document.getElementById("task-list")
+
+// let count = ul.children.length;
+
+// for(let index in gorevListesi){
+//     let li =`<li class="task list-group-item">
+//                  <div class="form-check">
+//                     <input type="checkbox" name="" id="${index + 1}" class="form-check-input">
+//                     <label for="${index + 1}" class="form-check-label">${gorevListesi[index]}</label>
+//                  </div>
+//             </li>`;
+
+            
+//         ul.insertAdjacentHTML("beforeend",li);
+// }
+
+
  
+
+let gorevListesi = [
+    {"id":1,"gorevAdi":"Görev 1"},
+    {"id":2,"gorevAdi":"Görev 2"},
+    {"id":3,"gorevAdi":"Görev 3"},
+    {"id":4,"gorevAdi":"Görev 4"}
+
+];
+
+ul = document.getElementById("task-list");
+
+for(let gorev of gorevListesi){
+    let li = `<li class="task list-group-item">
+                    <div class="form-check">
+                        <input type="checkbox" name="" id="${gorev.id}" class="form-check-input">
+                        <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
+                    </div>
+                </li>`;
+    ul.insertAdjacentHTML("beforeend",li);
+}
