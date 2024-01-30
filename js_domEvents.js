@@ -118,37 +118,43 @@
 
                             //Update kullanımı
 
-let gorevListesi = [
-    {"id":1,"gorevAdi":"Görev 1"},
-    {"id":2,"gorevAdi":"Görev 2"},
-    {"id":3,"gorevAdi":"Görev 3"},
-    {"id":4,"gorevAdi":"Görev 4"}
+// let gorevListesi = [
+//     {"id":1,"gorevAdi":"Görev 1"},
+//     {"id":2,"gorevAdi":"Görev 2"},
+//     {"id":3,"gorevAdi":"Görev 3"},
+//     {"id":4,"gorevAdi":"Görev 4"}
 
-];
+// ];
 
-ul = document.getElementById("task-list");
+// ul = document.getElementById("task-list");
 
-for(let gorev of gorevListesi){
-    let li = `<li class="task list-group-item">
-                    <div class="form-check">
-                        <input type="checkbox" name="" id="${gorev.id}" class="form-check-input">
-                        <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
-                    </div>
-                </li>`;
-    ul.insertAdjacentHTML("beforeend",li);
-}
+// for(let gorev of gorevListesi){
+//     let li = `<li class="task list-group-item">
+//                     <div class="form-check">
+//                         <input type="checkbox" name="" id="${gorev.id}" class="form-check-input">
+//                         <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
+//                     </div>
+//                 </li>`;
+//     ul.insertAdjacentHTML("beforeend",li);
+// }
 
 
 
-let sonuc;
+// let sonuc;
 // document.querySelector("#task-list").parentElement.remove();
 //  document.querySelector("#task-list").children[0].remove();
 //  document.querySelector("#task-list").children[1].remove();
 
 
-
-
-// console.log(sonuc)
+// document.querySelector("#task-list").removeAttribute("class"); //class attributune sahip verileri siler
+// document.querySelector("#task-list").children[1].removeAttribute("class"); // ilgili id nin 1. childindeki class ı siler
+// sonuc = document.querySelector("#task-list").children[1].getAttribute("class"); // id nin ilgili childinin classına sahip veriyi getirir
+// document.querySelector("#task-list").children[1].setAttribute("class","aaaa");// classa yeni özellik Ekleme yapar 
+// sonuc = document.querySelector("#task-list").children[1].classList[1];class ı listeler
+// document.querySelector("#task-list").children[1].classList.add("bg-danger"); // classı günceller yeni bir class ekler
+// document.querySelector("#task-list").children[1].classList.remove("bg-danger");
+// document.querySelector("#task-list").children[1].classList.contains("bg-danger"); // Bu özelliğe sahip bir class var mı onu kontrol eder
+// console.log(sonuc);
 
 
 
