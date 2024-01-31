@@ -176,9 +176,7 @@
 // event.preventDefault();
 // } // Burada eventin özelliklerine erişim sağladığımızda ne oluyor onu öğrendik burada fonksiyonu çağırdığımız yerdeki class a btn-lg veya herhangi bir class özelliği verirsek o ekleniyor
 
-
-            // Listeye eleman nasıl eklenir 
-
+// Listeye eleman nasıl eklenir
 
 // let gorevListesi = [
 //   { id: 1, gorevAdi: "Görev 1" },
@@ -223,3 +221,57 @@
 
 //   event.preventDefault();
 // }
+
+let gorevListesi = [
+  { "id": 1, "gorevAdi": "Görev 1" },
+  { "id": 2, "gorevAdi": "Görev 2" },
+  { "id": 3, "gorevAdi": "Görev 3" },
+  { "id": 4, "gorevAdi": "Görev 4" },
+];
+displayTask();
+function displayTask() {
+  ul = document.getElementById("task-list");
+  ul.innerHTML = "";
+  for (let gorev of gorevListesi) {
+    let li = `<li class="task list-group-item">
+                      <div class="form-check">
+                          <input type="checkbox" name="" id="${gorev.id}" class="form-check-input">
+                          <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
+                      </div>
+                      <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a onclick ="deleteTask(${gorev.id})" class="dropdown-item" href="#"><i class="fa-solid fa-trash"></i> Delete</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen"></i> Düzenle</a></li>
+                               
+                            </ul>
+                        </div>
+                  </li>`;
+    ul.insertAdjacentHTML("beforeend", li);
+  }
+}
+
+document.querySelector("#btnAddNewTask").addEventListener("click", newTask);
+document.querySelector("btnNewTask").addEventListener("keypress", function () {
+  if (event.key == "Enter") {
+    document.getElementById("#btnAddNewTask").click();
+  }
+});
+
+function newTask(event) {
+  let taskInput = document.querySelector("#txtTaskName");
+  if (taskInput.value == "") {
+    alert("Görev giriniz");
+  } else {
+    gorevListesi.push({
+      "id": gorevListesi.length + 1,
+      "gorevAdi": taskInput.value,
+    });
+    taskInput.value = "";
+    displayTask();
+  }
+
+  event.preventDefault();
+}
