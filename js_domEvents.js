@@ -421,13 +421,19 @@ let gorevListesi = [
 
 let editId;
 let isEditTask = false;
-let taskInput = document.querySelector("#txtTaskName");
+const taskInput = document.querySelector("#txtTaskName");
+const btnClear = document.querySelector("#btnClear");
 
 displayTasks();
 
 function displayTasks() {
     let ul = document.getElementById("task-list");
     ul.innerHTML = "";
+
+    if(gorevListesi.length == 0){
+        ul.innerHTML = "<p class='p-3 m-0'>Görev listeniz boş</p>"
+    }
+    else{
 
     for(let gorev of gorevListesi) {
 
@@ -452,6 +458,7 @@ function displayTasks() {
         ul.insertAdjacentHTML("beforeend", li);           
 
     }
+}
 }
 
 document.querySelector("#btnAddNewTask").addEventListener("click", newTask);
@@ -504,5 +511,10 @@ function editTask(taskId,taskName){
     taskInput.focus();
     taskInput.classList.add("active");
 }
+
+btnClear.addEventListener("click",function(){
+    gorevListesi.splice(0,gorevListesi.length);
+    displayTasks();
+})
 
 
