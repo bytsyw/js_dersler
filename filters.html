@@ -36,6 +36,7 @@
         .filters span{
           margin-right: 5px;
           font-size: 15px;
+          column-rule-color: #444444;
           cursor: pointer;
         }
      </style>
@@ -66,8 +67,8 @@
             <div class="card-header constrols">
               <div class="filters">
                 <span class="active" id="all"> Hepsi</span>
-                <span class="pending" id="all"> Yapılacaklar</span>
-                <span class="completed" id="all"> Tamamlananlar</span>
+                <span class="pending" id="pending"> Yapılacaklar</span>
+                <span class="completed" id="completed"> Tamamlananlar</span>
               </div>
               <button id="btnClear" class="btn btn-danger btn-sm float-end">
                 Temizle
