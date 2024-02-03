@@ -24,6 +24,20 @@
         .task label.checked {
           text-decoration: line-through;
         }
+        .controls {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .filters span.active{
+          color: #3C87FF;
+
+        }
+        .filters span{
+          margin-right: 5px;
+          font-size: 15px;
+          cursor: pointer;
+        }
      </style>
     <title>Document</title>
   </head>
@@ -52,8 +66,8 @@
             <div class="card-header constrols">
               <div class="filters">
                 <span class="active" id="all"> Hepsi</span>
-                <span class="pending" id="all"> YApılacaklar</span>
-                <span class="completed" id="all"> TAmamlananlar</span>
+                <span class="pending" id="all"> Yapılacaklar</span>
+                <span class="completed" id="all"> Tamamlananlar</span>
               </div>
               <button id="btnClear" class="btn btn-danger btn-sm float-end">
                 Temizle
