@@ -812,3 +812,8 @@
 //     localStorage.setItem("gorevListesi",JSON.stringify(gorevListesi));
 
 // }
+
+
+
+
+//                      Bu yapılardan sonra projeler ile devam edeceğiz 
