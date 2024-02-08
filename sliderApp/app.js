@@ -8,6 +8,16 @@ const models = [
         "name": "Renault Clio",
         "image": "img/ren1.jpg",
         "link":"https://www.renault.com.tr",
+    },
+    {
+        "name": "Pagani Zonda",
+        "image": "img/pagani-zonda.jpg",
+        "link":"https://www.pagani.com",
+    },
+    {
+        "name": "Wolkswagen Transporter",
+        "image": "img/porterww.jpg",
+        "link":"https://www.vw.com.tr",
     }
 ]
 
