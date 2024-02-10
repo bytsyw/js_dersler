@@ -37,12 +37,26 @@ function checkEmail(input){
     });
     
   }
+  function checkLenght(input, min, max){
+    if(input.value.lenght < min){
+        error(input`${input.id} en az ${min} karakter girmelisiniz`)
+    }
+    else if(input.value.lenght > max){
+        error(input,`${input.id} en fazla ${max} karakter girmelisiniz`)
+    }
+    else{
+        success(input)
+    }
+  }
 
 form.addEventListener('submit',function(e){
     e.preventDefault();
 
     checkRequired([username,email,password,repassword]);
-    checkEmail(email);    
+    checkEmail(email);
+    
+    checkLenght(username,7.15)
+    checkLenght(password, 7,12);
 
     // if(username.value ===''){
     //     error(username, "Username Gerekli");
