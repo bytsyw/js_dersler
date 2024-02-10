@@ -3,7 +3,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const repassword = document.getElementById('repassword');
-
+const phone = document.getElementById('phone');
 
 function error(input, message){
     input.className = 'form-control is-invalid';
@@ -54,15 +54,23 @@ function checkEmail(input){
     }
   }
 
+  function checkPhone(input){
+    var exp = /^\d{10}$/;
+    if(!exp.test(input.value)){error(input,'telefon 10 karakterli olmalı')}
+  }
+
+
+
 form.addEventListener('submit',function(e){
     e.preventDefault();
 
-    checkRequired([username,email,password,repassword]);
+    checkRequired([username,email,password,repassword,phone]);
     checkEmail(email);
     
     checkLenght(username,7.15)
     checkLenght(password, 7,12);
     checkPassword(password,repassword);
+    checkPhone(phone);
 
     // if(username.value ===''){
     //     error(username, "Username Gerekli");
