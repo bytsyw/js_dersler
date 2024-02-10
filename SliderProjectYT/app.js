@@ -26,11 +26,28 @@ var model = [
         "title":"ferrari",
     },
     {
-        "img":"img/fordMustang.jpg",
+        "img":"img/mitshubishi.jpg",
         "description":"description",
+        "author":"BYT",
         "des":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?",
         "topic":"Car",
-        "title":"Ford",
+        "title":"mitshubishi",
+    },
+    {
+        "img":"img/fordCortina.jpg",
+        "description":"description",
+        "author":"BYT",
+        "des":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?",
+        "topic":"Car",
+        "title":"Ford Cortina",
+    },
+    {
+        "img":"img/mclaren.jpg",
+        "description":"description",
+        "author":"BYT",
+        "des":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?",
+        "topic":"Car",
+        "title":"mclaren",
     }
 ]
 
