@@ -702,7 +702,7 @@
 //                                 <i class="fa-solid fa-ellipsis"></i>
 //                             </button>
 //                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-//                                 <li><a onclick="deleteTask(${gorev.id})" class="dropdown-item" href="#"><i class="fa-solid fa-trash-can"></i> Sil</a></li>
+//                                    <li><a onclick="deleteTask(${gorev.id})" class="dropdown-item" href="#"><i class="fa-solid fa-trash-can"></i> Sil</a></li>
 //                                 <li><a onclick='editTask(${gorev.id}, "${gorev.gorevAdi}")' class="dropdown-item" href="#"><i class="fa-solid fa-pen"></i> Düzenle</a></li>
 //                             </ul>
 //                         </div>
