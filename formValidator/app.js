@@ -12,7 +12,7 @@ function error(input, message){
     div.className = 'invalid-feedback'
 }
 function success(input){
-    input.className('form-control is-valid')
+    input.className = 'form-control is-valid';
 }
 
 function checkEmail(input){
@@ -48,6 +48,11 @@ function checkEmail(input){
         success(input)
     }
   }
+  function checkPassword(input1,input2){
+    if(input1.value !== input2.value){
+        error(input2, 'Parolalar eşleşmiyor');
+    }
+  }
 
 form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -57,6 +62,7 @@ form.addEventListener('submit',function(e){
     
     checkLenght(username,7.15)
     checkLenght(password, 7,12);
+    checkPassword(password,repassword);
 
     // if(username.value ===''){
     //     error(username, "Username Gerekli");
